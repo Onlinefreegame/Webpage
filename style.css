@@ -1,0 +1,94 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif; /* Change to your desired font */
+  background-color: #f2f2f2;
+  color: #333;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  justify-content: space-between;
+}
+
+/* Header Styles */
+header {
+  background-color: #ff8c00; /* Orange */
+  padding: 20px 0;
+  border-radius: 10px; /* Adjust the value as needed for your desired roundness */
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 2rem;
+  color: #fff;
+}
+
+/* Main Content Styles */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.crypto-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  flex: 1;
+  text-align: left;
+  max-width: 300px;
+}
+
+.crypto-info h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.crypto-info p {
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+.crypto-details ul {
+  list-style: none;
+  margin-top: 10px;
+  padding-left: 0;
+}
+
+.crypto-details li {
+  margin: 5px 0;
+}
+
+/* Button Styles */
+button {
+  background-color: #ff8c00; /* Orange */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+button:hover {
+  background-color: #ff6c00; /* Darker Orange on Hover */
+}
+
+/* Footer Styles */
+footer {
+  margin-top: 20px;
+}

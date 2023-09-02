@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Trading Tool</title>
+    <style>/* Reset some default styles */
+        body, h1, h2, h3, p, ul, li {
+          margin: 0;
+          padding: 0;
+        }
+        
+        body {
+          font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; /* Change to your desired font */
+          background-color: cornsilk;
+          color: #333;
+          text-align: center;
+          justify-content: space-between;
+        }
+        
+        /* Header Styles */
+        header {
+          background-color: #ff8c00; /* Orange */
+          border-radius: 10px; /* Adjust the value as needed for your desired roundness */
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+          padding: 20px;
+          flex: 1;
+        }
+        
+        header h1 {
+          font-size: 2rem;
+          color: #fff;
+        }
+        
+        /* Form and Sections Styles */
+        form {
+          text-align: left;
+          margin-bottom: 20px;
+        }
+        
+        section {
+          background-color: #fff;
+          border-radius: 10px;
+          padding: 20px;
+          margin-bottom: 20px;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        h2 {
+          font-size: 1.5rem;
+          margin-bottom: 10px;
+        }
+        
+        /* Checkbox Styles */
+        label {
+          display: block;
+          margin-bottom: 10px;
+          font-weight: bold;
+        }
+        
+        input[type="checkbox"] {
+          margin: 10px;
+        }
+        
+        /* Button Styles */
+        button {
+          background-color: #ff8c00; /* Orange */
+          color: #fff;
+          padding: 10px 20px;
+          border: none;
+          border-radius: 5px;
+          font-size: 1rem;
+          cursor: pointer;
+        }
+        
+        button:hover {
+          background-color: #ff6c00; /* Darker Orange on Hover */
+        }
+        
+        /* Crypto Info Styles */
+        .crypto-info {
+          text-align: left;
+          margin-bottom: 20px;
+        }
+        
+        h1 {
+          font-size: 1.5rem;
+          margin: 20px 0;
+          color: #333;
+        }
+        
+        ul {
+          list-style: none;
+        }
+        
+        li {
+          margin: 5px 0;
+        }
+        
+        /* Trading Models Styles */
+        .trading-model {
+          text-align: left;
+          margin-bottom: 20px;
+        }
+        
+        h3 {
+          font-size: 1.2rem;
+          margin: 10px 0;
+          color: #333;
+        }
+        
+        /* Crypto Swaps Styles */
+        .crypto-swap {
+          text-align: left;
+          margin-bottom: 20px;
+        }
+        p{
+            padding: 5px;
+            justify-content: space-between;
+        }
+        
+        /* Responsive Styles */
+        @media (min-width: 768px) {
+          body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+        
+          .crypto-selection, .indicator-selection, .crypto-details, .crypto-holdings, .trading-models, .crypto-swaps {
+            max-width: 600px;
+          }
+        }
+        </style>
+</head>
+<body>
+    <header>
+        <h1>Crypto Trading Tool</h1>
+    </header>
+    
+    <section class="crypto-selection">
+        <h2>Please choose the crypto to be traded</h2>
+        <form action="">
+            <label for="cryptoA">
+                <input type="checkbox" id="cryptoA" name="crypto" value="Crypto A">
+                Crypto A
+            </label>
+            <label for="cryptoB">
+                <input type="checkbox" id="cryptoB" name="crypto" value="Crypto B">
+                Crypto B
+            </label>
+            <label for="cryptoC">
+                <input type="checkbox" id="cryptoC" name="crypto" value="Crypto C">
+                Crypto C
+            </label>
+            <label for="cryptoD">
+                <input type="checkbox" id="cryptoD" name="crypto" value="Crypto D">
+                Crypto D
+            </label>
+            <label for="cryptoE">
+                <input type="checkbox" id="cryptoE" name="crypto" value="Crypto E">
+                Crypto E
+            </label>
+        </form>
+
+        <h2>Please select the trading indicators</h2>
+        <form action="">
+            <label for="indicatorA">
+                <input type="checkbox" id="indicatorA" name="indicator" value="Indicator A">
+                Indicator A
+            </label>
+            <label for="indicatorB">
+                <input type="checkbox" id="indicatorB" name="indicator" value="Indicator B">
+                Indicator B
+            </label>
+            <label for="indicatorC">
+                <input type="checkbox" id="indicatorC" name="indicator" value="Indicator C">
+                Indicator C
+            </label>
+            <label for="indicatorD">
+                <input type="checkbox" id="indicatorD" name="indicator" value="Indicator D">
+                Indicator D
+            </label>
+            <label for="indicatorE">
+                <input type="checkbox" id="indicatorE" name="indicator" value="Indicator E">
+                Indicator E
+            </label>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <section class="crypto-details">
+        <h2>The analyzed details of selected crypto</h2>
+        <article class="crypto-info">
+            <h1>Crypto A</h1>
+            <ul>
+                <li>Price: 12 USD</li>
+                <li>Ten Days Average: 10 USD</li>
+                <li>Moving Average: 11.6 USD</li>
+                <li>Alltime True Range: 3.13%</li>
+                <li>Timestamp: <time></time></li>
+                <li>Trading quarter: 1 day</li>
+                <p>Based on selected indicators</p>
+                <li>Predicted hike in 24H: 21%</li>
+            </ul>
+        </article>
+
+        <article class="crypto-info">
+            <h1>Crypto B</h1>
+            <ul>
+                <li>Price: 21 USD</li>
+                <li>Ten Days Average: 20 USD</li>
+                <li>Moving Average: 20.6 USD</li>
+                <li>Alltime True Range: 4.1%</li>
+                <li>Timestamp: <time></time></li>
+                <li>Trading quarter: 1 day</li>
+                <p>Based on selected indicators</p>
+                <li>Predicted hike in 24H: 11%</li>
+            </ul>
+        </article>
+
+        <article class="crypto-info">
+            <h1>Crypto C</h1>
+            <ul>
+                <li>Price: 5 USD</li>
+                <li>Ten Days Average: 3 USD</li>
+                <li>Moving Average: 3.9 USD</li>
+                <li>Alltime True Range: 5%</li>
+                <li>Timestamp: <time></time></li>
+                <li>Trading quarter: 1 day</li>
+                <p>Based on selected indicators</p>
+                <li>Predicted hike in 24H: 5.1%</li>
+            </ul>
+        </article>
+    </section>
+
+    <section class="crypto-holdings">
+        <h2>Please enter the following details:</h2>
+        <form action="">
+            <p>Crypto A holdings : <input type="number" name="cryptoA" id="cryptoA"></p>
+            <p>Crypto B holdings : <input type="number" name="cryptoB" id="cryptoB"></p>
+            <p>Crypto C holdings : <input type="number" name="cryptoC" id="cryptoC"></p>
+            <p>Enter BTC holdings: <input type="number" name="btcHoldings" id="btcHoldings"></p>
+            <p>   BTC lock volume: <input type="number" name="btcLockVolume" id="btcLockVolume"></p>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <section class="trading-models">
+        <h2>Based on the previous data, the given trading signals are following:</h2>
+        <article class="trading-model">
+            <h3>Trading Model 1: High Risk-to-Profit model</h3>
+            <p>A: +10 USD | B: -50 USD | C: 25 USD</p>
+            <p>Profit: 22.5% | Risk: 8%</p>
+        </article>
+
+        <article class="trading-model">
+            <h3>Trading Model 2: Medium Risk-to-Profit model</h3>
+            <p>A: +18 USD | B: -70 USD | C: 95 USD</p>
+            <p>Profit: 32.5% | Risk: 28%</p>
+        </article>
+
+        <article class="trading-model">
+            <h3>Trading Model 3: Low Risk-to-Profit model</h3>
+            <p>A: +39 USD | B: -81 USD | C: 95 USD</p>
+            <p>Profit: 42.5% | Risk: 48%</p>
+        </article>
+    </section>
+
+    <section class="crypto-swaps">
+        <h2>Feasible swaps for each coin</h2>
+        <div class="crypto-swap" id="cryptoASwap">
+            <h3>Coin A swap</h3>
+            <ul>
+                <li>B equivalent: x USD</li>
+            </ul>
+            <ul>
+                <li>C equivalent: y USD</li>
+            </ul>
+        </div>
+
+        <div class="crypto-swap" id="cryptoBSwap">
+            <h3>Coin B swap</h3>
+            <ul>
+                <li>A equivalent: x USD</li>
+            </ul>
+            <ul>
+                <li>C equivalent: y USD</li>
+            </ul>
+        </div>
+
+        <div class="crypto-swap" id="cryptoCSwap">
+            <h3>Coin C swap</h3>
+            <ul>
+                <li>A equivalent: x USD</li>
+            </ul>
+            <ul>
+                <li>B equivalent: y USD</li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <button><a href="index.html">Home</a></button>
+    </footer>
+</body>
+</html>
